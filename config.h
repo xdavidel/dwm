@@ -66,13 +66,14 @@ static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] 
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
-#include "layouts.c"
 #include "fibonacci.c"
+#include "grid.c"
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[T]",	tile },    /* first entry is default */
 	{ "[M]",	monocle },
  	{ "[@]",	spiral },
+	{ "HHH",  grid },
 	{ "[^]",	NULL },    /* no layout function means floating behavior */
 	{ NULL,		NULL },
 };
