@@ -141,6 +141,10 @@ static Key keys[] = {
 	{ MODKEY|ALTKEY,		XK_l,			setmfact,		{.f = +0.05} },
 	{ MODKEY|ALTKEY,		XK_Left,		setmfact,		{.f = -0.05} },
 	{ MODKEY|ALTKEY,		XK_Right,		setmfact,		{.f = +0.05} },
+	{ MODKEY|ALTKEY,		XK_j,			setcfact,		{.f = -0.25} },
+	{ MODKEY|ALTKEY,		XK_k,			setcfact,		{.f = +0.25} },
+	{ MODKEY|ALTKEY,		XK_Down,		setcfact,		{.f = -0.25} },
+	{ MODKEY|ALTKEY,		XK_Up,			setcfact,		{.f = +0.25} },
 	/* { MODKEY|ShiftMask,		XK_i,			incnmaster,		{.i = +1 } }, */
 	/* { MODKEY|ShiftMask,		XK_o,			incnmaster,		{.i = -1 } }, */
 	{ MODKEY,				XK_b,			togglebar,		{0} },
