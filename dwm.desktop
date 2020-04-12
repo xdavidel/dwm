@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=DWM
 Comment=dwm login
-Exec=rundwm
-TryExec=rundwm
+Exec=dwm
+TryExec=dwm
 Type=Application

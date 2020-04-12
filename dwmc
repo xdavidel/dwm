@@ -10,6 +10,8 @@ case $# in
 	setlayout | view | viewall | togglebar | togglefloating | zoom | killclient | quit)
 		signal $1
 		;;
+	restart)
+		signal quit i "1" ;;
 	*)
 		echo "Unknown command or missing one argument."
 		exit 1
